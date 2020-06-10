@@ -43,7 +43,7 @@ def load_graph(file_name):
 
 def get_cluster(file_name, idx=-2):
 
-    file_name = os.getcwd()+file_name
+    file_name = os.getcwd() + file_name
     G = load_graph(file_name)
     G.vs["name"] = list(range(G.vcount())) # naming each node to be 0, 1, 2, ...
     if idx == -2:
